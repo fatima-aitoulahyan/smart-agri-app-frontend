@@ -1,16 +1,44 @@
-# agri_frontend
+# Fellah Smart
 
-A new Flutter project.
+Application mobile Flutter de gestion agricole avec détection de maladies des plantes par IA, suivi des cultures et alertes météo.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+Fellah Smart est une application mobile Android/iOS destinée aux agriculteurs.  
+Elle permet de suivre les cultures, analyser les maladies des plantes à partir d’images et recevoir des alertes personnalisées.
 
-A few resources to get you started if this is your first Flutter project:
+## Fonctionnalités
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Détection de maladies des plantes par IA
+- Gestion des cultures
+- Météo en temps réel
+- Notifications (météo et irrigation)
+- Tableau de bord
+- Planning agricole
+- Calculateur d’engrais
+- Multilingue (FR / EN / AR)
+- Paramètres utilisateur (ville, langue, notifications)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies
+
+- Flutter (Dart)
+- Provider
+- EasyLocalization
+- Firebase Cloud Messaging
+- flutter_local_notifications
+- SharedPreferences
+- HTTP (REST API)
+- Backend Django REST Framework
+
+## Configuration
+Modifier l’URL du backend dans :
+
+static const String baseUrl = "https://votre-backend.com/api";
+
+## Installation
+
+```bash
+git clone https://github.com/fatima-aitoulahyan/smart-agri-app-frontend.git
+cd Agri_frontend
+flutter pub get
+flutter run
